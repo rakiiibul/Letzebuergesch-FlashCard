@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose Category</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>Select a Category</h1>
+
+    <div class="category-buttons">
+        <button onclick="goToCards('math')">Math</button>
+        <button onclick="goToCards('english')">English</button>
+        <button onclick="goToCards('luxembourgish')">Luxembourgish</button>
+    </div>
+</div>
+
+<script>
+function goToCards(category) {
+    window.location.href = `index.html?category=${category}`;
+}
+</script>
+
+</body>
+</html>

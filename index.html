@@ -8,25 +8,39 @@
 <body>
 
 <div class="app">
-    <h1>Flashcards</h1>
+     <div class="buttons">
+       
+        <button id="prevBtn">Previous</button>
+         <button id="nextBtn">Next</button>
+    </div>
 
- <div id="card" class="card">
-    <div class="card-inner">
-        <div class="card-front">
-            <p id="frontText"></p>
-        </div>
-        <div class="card-back">
-            <p id="backText"></p>
+    <div id="card" class="card">
+        <div class="card-inner">
+           <div class="card-front">
+    <p id="frontText"></p>
+    <p id="hintText" style="color: #555; font-style: italic;"></p>
+</div>
+
+<div class="card-back">
+    <p id="backText"></p>
+    <p id="detailsText" style="color: #555; font-style: italic;"></p>
+</div>
         </div>
     </div>
+    <div class="extra-buttons">
+    <button id="hintBtn">Show Hint</button>
+    <button id="detailsBtn">Show Details</button>
+     <div class="audio">
+        <button id="speakBtn">🔊 Listen</button>
+    </div>
+
+    </div>
+   
+
+   
+
 </div>
 
-<div class="buttons">
-    <button id="nextBtn">Next</button>
-    <button id="prevBtn">Previous</button>
-</div>
-
-</div>
 
 <script src="script.js"></script>
 </body>
